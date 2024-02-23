@@ -471,6 +471,10 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio-item {
+  height: 20rem;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
