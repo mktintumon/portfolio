@@ -185,12 +185,37 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-.mobile-nav-active {
-  overflow: hidden;
+/* Base Header Styling */
+#header {
+  position: fixed;
+  top: 0;
+  left: -300px; /* This pushes the menu off-screen to the left by default */
+  bottom: 0;
+  width: 300px;
+  transition: all 0.5s; /* This makes it slide smoothly instead of snapping */
+  z-index: 9997;
+  overflow-y: auto;
+  background: #040b14; /* Your menu background color */
 }
+
+/* When the menu button is clicked, the JS adds this class to the body, pulling the menu back to 0 */
 .mobile-nav-active #header {
   left: 0;
 }
+
+/* Make sure the menu stays visible on Desktop screens! */
+@media (min-width: 1200px) {
+  #header {
+    left: 0;
+  }
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+/* .mobile-nav-active #header {
+  left: 0;
+} */
 
 /*--------------------------------------------------------------
 # Hero Section
