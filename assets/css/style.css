@@ -883,6 +883,68 @@ section {
 .contact .php-email-form button[type=submit]:hover {
   background: #37b3ed;
 }
+
+/* Skills Section Custom Styling */
+.skills-group {
+  margin-bottom: 20px;
+}
+
+.skills-category-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #45505b; /* Adjust to match your heading color */
+  margin-bottom: 15px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Base Badge Styling */
+.skill-badge {
+  padding: 8px 18px;
+  border-radius: 50px; /* This creates the fully rounded pill look */
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+
+/* Primary Skills - Solid Background */
+.skill-badge.primary {
+  background-color: #0563bb; /* Your theme's primary color */
+  color: #ffffff;
+  border: 2px solid #0563bb;
+}
+
+.skill-badge.primary:hover {
+  background-color: #044b8e;
+  border-color: #044b8e;
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Familiar Skills - Outlined */
+.skill-badge.familiar {
+  background-color: transparent;
+  color: #0563bb; /* Your theme's primary color */
+  border: 2px solid #0563bb;
+}
+
+.skill-badge.familiar:hover {
+  background-color: #f2f8fe; /* Very light tint of primary color */
+  transform: translateY(-2px);
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+
+
+
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
